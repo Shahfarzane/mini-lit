@@ -34,7 +34,8 @@ export const Button = fc<ButtonProps>(
 
       const variantClasses = {
          default: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
-         destructive: "bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90",
+         // Outline with red text: red stays reserved for the action itself, not a filled block.
+         destructive: "border border-border bg-transparent text-destructive hover:bg-destructive/10",
          outline:
             "border border-input bg-background text-foreground shadow-xs hover:bg-accent hover:text-accent-foreground",
          secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",

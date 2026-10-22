@@ -46,5 +46,5 @@ export interface ComponentPropsWithoutChildren {
    className?: string;
 }
 
-export { createRef, html, nothing, ref };
 export type { Ref, TemplateResult };
+export { createRef, html, nothing, ref };

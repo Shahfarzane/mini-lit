@@ -294,12 +294,13 @@ type TVSlotResult<S> = S extends { slots: infer Slots }
    : never;
 
 // Extract variant props from our styles structure
-export type VariantPropsFromStyles<S> = S extends SimpleStyles<ComponentDefinition>
-   ? { [K in keyof NonNullable<S["variants"]>]?: keyof NonNullable<S["variants"]>[K] } & {
-        className?: string;
-        class?: string;
-     }
-   : never;
+export type VariantPropsFromStyles<S> =
+   S extends SimpleStyles<ComponentDefinition>
+      ? { [K in keyof NonNullable<S["variants"]>]?: keyof NonNullable<S["variants"]>[K] } & {
+           className?: string;
+           class?: string;
+        }
+      : never;
 
 // Conditional render function type based on whether slots exist
 export type RenderFunction<Props, Styles> = Styles extends { slots: Record<string, string> }

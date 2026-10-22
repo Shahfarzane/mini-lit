@@ -1,5 +1,5 @@
 import assert from "node:assert";
-import { test } from "node:test";
+import { test } from "vitest";
 
 test("Library builds", () => {
    // Since we're testing a browser library in Node.js,

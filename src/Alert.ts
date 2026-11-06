@@ -14,7 +14,7 @@ const _Alert = fc<AlertProps>(({ variant = "default", className = "", children }
    };
 
    const baseClasses =
-      "relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground";
+      "relative w-full rounded-lg border p-4 [&>svg~*]:pl-8 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground";
 
    return html` <div class="${baseClasses} ${variantClasses[variant]} ${className}" role="alert">${children}</div> `;
 });

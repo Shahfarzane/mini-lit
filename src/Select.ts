@@ -257,7 +257,7 @@ export function Select(props: SelectProps): TemplateResult {
                              ${
                                 group.label
                                    ? html`
-                                     <div class="text-muted-foreground px-2 py-1.5 text-xs font-medium">
+                                     <div class="text-muted-foreground px-2 py-1 text-xs font-medium">
                                         ${group.label}
                                      </div>
                                   `
@@ -274,7 +274,7 @@ export function Select(props: SelectProps): TemplateResult {
                                       aria-selected=${isSelected}
                                       data-disabled=${option.disabled || false}
                                       tabindex="-1"
-                                      class="relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-none select-none transition-colors
+                                      class="relative flex w-full cursor-default items-center gap-2 rounded-sm py-2 pr-8 pl-2 text-sm outline-none select-none transition-colors
 												${isFocused ? "bg-accent text-accent-foreground" : ""}
 												${option.disabled ? "pointer-events-none opacity-50" : "hover:bg-accent hover:text-accent-foreground"}
 												${isSelected ? "font-medium" : ""}"
@@ -324,7 +324,7 @@ export function Select(props: SelectProps): TemplateResult {
                              aria-selected=${isSelected}
                              data-disabled=${option.disabled || false}
                              tabindex="-1"
-                             class="relative flex w-full cursor-default items-center gap-2 rounded-sm py-1.5 pr-8 pl-2 text-sm outline-none select-none transition-colors
+                             class="relative flex w-full cursor-default items-center gap-2 rounded-sm py-2 pr-8 pl-2 text-sm outline-none select-none transition-colors
 										${isFocused ? "bg-accent text-accent-foreground" : ""}
 										${option.disabled ? "pointer-events-none opacity-50" : "hover:bg-accent hover:text-accent-foreground"}
 										${isSelected ? "font-medium" : ""}"

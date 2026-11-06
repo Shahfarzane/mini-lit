@@ -15,7 +15,7 @@ const _Card = fc<CardProps>(({ hoverable = false, className = "", children }) =>
 const _CardHeader = fc<BaseComponentProps>(({ className = "", children }) => {
    return html`
       <div
-         class="grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-[ui-card-action]:grid-cols-[1fr_auto] ${className}"
+         class="grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-[ui-card-action]:grid-cols-[1fr_auto] ${className}"
       >
          ${children}
       </div>

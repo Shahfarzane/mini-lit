@@ -30,7 +30,7 @@ export const Diff = fc<DiffProps>(({ oldText, newText, title, className = "" }):
 
          lines.push(
             html`<div class="${rowClass}">
-               <pre class="m-0 px-4 py-0.5 text-xs font-mono text-foreground">${prefix} ${line}</pre>
+               <pre class="m-0 px-4 py-0 text-xs font-mono text-foreground">${prefix} ${line}</pre>
             </div>`,
          );
       }
@@ -42,7 +42,7 @@ export const Diff = fc<DiffProps>(({ oldText, newText, title, className = "" }):
    if (title) {
       return html`
          <div class="border border-border rounded-lg overflow-hidden ${className}">
-            <div class="flex items-center justify-between px-3 py-1.5 bg-muted border-b border-border">
+            <div class="flex items-center justify-between px-3 py-1 bg-muted border-b border-border">
                <span class="text-xs text-muted-foreground font-mono">${title}</span>
                <span class="text-xs text-muted-foreground">
                   <span class="text-emerald-600">+${addedCount}</span>

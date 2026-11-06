@@ -53,7 +53,7 @@ export class LanguageSelector extends LitElement {
                variant: "ghost",
                size: "sm",
                onClick: () => this.toggleDropdown(),
-               className: "gap-1.5",
+               className: "gap-2",
                children: html`
                   ${icon(Globe, "sm")}
                   <span class="text-xs font-medium">${this.currentLanguage.toUpperCase()}</span>
@@ -68,7 +68,7 @@ export class LanguageSelector extends LitElement {
                        ${this.languages.map(
                           (lang) => html`
                              <button
-                                class="w-full px-3 py-1.5 text-sm text-left hover:bg-accent hover:text-accent-foreground transition-colors
+                                class="w-full px-3 py-2 text-sm text-left hover:bg-accent hover:text-accent-foreground transition-colors
 												${lang.code === this.currentLanguage ? "bg-accent/50 text-accent-foreground font-medium" : ""}"
                                 @click=${() => this.selectLanguage(lang.code)}
                              >
